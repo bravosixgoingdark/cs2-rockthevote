@@ -22,3 +22,7 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
+    - uses: actions/upload-artifact@v4
+      with: 
+        name: Rockthevote 
+        path: /home/runner/work/cs2-rockthevote/cs2-rockthevote/bin/Debug/net8.0/
